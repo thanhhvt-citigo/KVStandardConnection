@@ -14,7 +14,7 @@ import UIKit
     /// Delegate for connecting with super app
     @objc var delegate: MiniappDelegate? { get set }
     
-    @objc init(appId: String)
+    @objc init(appId: String, superAppId: String)
     
     /// Super app's id
     @objc var superAppId: String { get set }
