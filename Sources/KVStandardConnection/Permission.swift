@@ -7,8 +7,7 @@
 
 import Foundation
 
-enum MiniAppPermissionScope: String {
-    case token
-    case notifications
-    case storage
+@objc public enum MiniAppPermissionScope: Int {
+    case notifications = 1
+    case camera = 2
 }
