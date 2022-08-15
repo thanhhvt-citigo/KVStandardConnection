@@ -25,6 +25,9 @@ import UIKit
     /// The way super app opens mini app
     @objc func show(presentationType: MiniAppPresentationType, root: UIViewController, isNavigationControllerRequired: Bool)
     
+    /// Dismiss the mini app
+    @objc func dismiss(completion: (() -> Void)?)
+    
     /// Send custom event to super app
     @objc func dispatch(_ action: MiniAppAction)
 }
