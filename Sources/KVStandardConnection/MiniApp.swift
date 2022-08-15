@@ -23,7 +23,7 @@ import UIKit
     @objc var rootViewController: UIViewController? { get }
     
     /// The way super app opens mini app
-    @objc func show(presentationType: MiniAppPresentationType, root: UIViewController, isNavigationControllerRequired: Bool)
+    @objc func show(presentationType: MiniAppPresentationType, root: UIViewController)
     
     /// Dismiss the mini app
     @objc func dismiss(completion: (() -> Void)?)
