@@ -22,6 +22,9 @@ import UIKit
     /// First view of the app.
     @objc var rootViewController: UIViewController? { get }
     
+    /// The way super app opens mini app
+    @objc func show(presentationType: MiniAppPresentationType, root: UIViewController, isNavigationControllerRequired: Bool)
+    
     /// Send custom event to super app
     @objc func dispatch(_ action: MiniAppAction)
 }
